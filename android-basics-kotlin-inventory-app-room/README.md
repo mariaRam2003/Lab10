@@ -1,36 +1,54 @@
-Inventory - Solution Code
+DevByteRepository - Solution Code
 ==================================
 
-Intermediate version of the solution code for Android Basics in Kotlin.
-Codelab: Android Jetpack - Room.
+Solution code for the Repository codelab.
 
 Introduction
 ------------
 
-This app is an Inventory tracking app. Demos how to add, update, sell, and delete items from the local database. 
-This app demonstrated
-the use of Android Jetpack component [Room](https://developer.android.com/training/data-storage/room) database.  
-
-The app also leverages [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel),
-[LiveData](https://developer.android.com/topic/libraries/architecture/livedata),
-[Flow](https://developer.android.com/kotlin/flow),
-[View Binding](https://developer.android.com/topic/libraries/view-binding),
-and [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/)
-with the SafeArgs plugin for parameter passing between fragments.
+DevByteRepository app displays a list of DevByte videos. DevByte videos are
+short videos made by the Google Android developer relations team to introduce
+new developer features on Android. This app demonstrates the Repository pattern,
+the recommended best practice for code separation and architecture. Using
+repository pattern the data layer is abstracted from the rest of the app.
+Repositories act as mediators between different data sources, such as persistent
+models, web services, and caches and the rest of the app.
 
 Pre-requisites
 --------------
 
 You need to know:
-- How to create and use fragments.
-- How to navigate between fragments, and use safeArgs to pass data between fragments.
-- How to use architecture components including ViewModel, LiveData, and LiveData transformations.
-- How to use coroutines for long-running tasks.
-- RecyclerView and adapters
-- SQLite database and the SQLite query language
+- How to open, build, and run Android apps with Android Studio.
+- The basic Android Architecture Components, ViewModel, and LiveData.
+- The data persistence library, Room.
+- Building and launching a coroutine.
+- Read the logs using the Logcat.
+- Binding adapters in data binding.
+- Using the Retrofit networking library.
 
 
 Getting Started
 ---------------
 
 1. Download and run the app.
+2. You need Android Studio 3.4 or higher to build this project.
+
+License
+-------
+
+Copyright 2019 Google, Inc.
+
+Licensed to the Apache Software Foundation (ASF) under one or more contributor
+license agreements.  See the NOTICE file distributed with this work for
+additional information regarding copyright ownership.  The ASF licenses this
+file to you under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License.  You may obtain a copy of
+the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+License for the specific language governing permissions and limitations under
+the License.
