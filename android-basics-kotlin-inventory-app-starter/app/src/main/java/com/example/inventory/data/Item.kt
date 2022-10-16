@@ -13,13 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.inventory
+package com.example.inventory.data
 
-import android.app.Application
-import com.example.inventory.data.ItemRoomDatabase
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-class InventoryApplication : Application() {
-    // Using by lazy so the database and the repository are only created when they're needed
-    // rather than when the application starts
-    val database: ItemRoomDatabase by lazy { ItemRoomDatabase.getDatabase(this) }
-}
+/**
+ * Entity data class represents a single row in the database.
+ */
+@Entity
+data class Item(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+    @ColumnInfo(name = "name")
+    val itemName: String,
+    @ColumnInfo(name = "price")
+    val itemPrice: Double,
+    @ColumnInfo(name = "quantity")
+    val quantityInStock: Int,
+)
